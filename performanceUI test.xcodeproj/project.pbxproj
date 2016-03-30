@@ -12,6 +12,7 @@
 		B4C566591CABD605009D5E6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4C566571CABD605009D5E6E /* Main.storyboard */; };
 		B4C5665B1CABD605009D5E6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4C5665A1CABD605009D5E6E /* Assets.xcassets */; };
 		B4C5665E1CABD605009D5E6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4C5665C1CABD605009D5E6E /* LaunchScreen.storyboard */; };
+		B4C566661CABD676009D5E6E /* TestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C566651CABD676009D5E6E /* TestCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		B4C5665A1CABD605009D5E6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4C5665D1CABD605009D5E6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B4C5665F1CABD605009D5E6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4C566651CABD676009D5E6E /* TestCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				B4C566531CABD605009D5E6E /* AppDelegate.swift */,
 				B4C566551CABD605009D5E6E /* ViewController.swift */,
+				B4C566651CABD676009D5E6E /* TestCell.swift */,
 				B4C566571CABD605009D5E6E /* Main.storyboard */,
 				B4C5665A1CABD605009D5E6E /* Assets.xcassets */,
 				B4C5665C1CABD605009D5E6E /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4C566561CABD605009D5E6E /* ViewController.swift in Sources */,
+				B4C566661CABD676009D5E6E /* TestCell.swift in Sources */,
 				B4C566541CABD605009D5E6E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,10 +256,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "performanceUI test/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ITA.performanceUI-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -263,10 +271,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "performanceUI test/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ITA.performanceUI-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -289,6 +301,7 @@
 				B4C566641CABD605009D5E6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
